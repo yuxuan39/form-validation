@@ -1,12 +1,27 @@
-import {groupBy} from 'lodash/collection'
-import people from './people'
 import './styles/style.scss'
-import img from './assets/x-30465_640.png'
+import shortid from 'shortid'
 
-const managerGroups = groupBy(people, 'manager')
-const root = document.querySelector('#root')
-root.innerHTML = `
-    <pre>${JSON.stringify(managerGroups, null, 2)}</pre>
-    <img src="${img}" alt=""/>
-    <img src="Nightcore-Shadows.jpg" alt=""/>
-`
+var inputs = document.querySelectorAll('.login-input')
+var username = document.getElementById('username')
+var email = document.getElementById('email')
+var phone = document.getElementById('phone')
+var birth = document.getElementById('birth')
+
+
+    inputs.addEventListener('keydown', function (event) {
+        var type = event.target.type
+        
+    })
+
+function isText (){
+    if (type === 'text') {
+            isSixWords(event)
+        }
+function isSixWords(event) {
+}
+    
+        event.target.parentElement.forEach(dd => {
+            appendChild('<p>It\'s too short (minimum is 6 characters)</p>')
+        })
+function input2() { }
+function inputDate() { }

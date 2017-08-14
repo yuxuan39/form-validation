@@ -4,9 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
-  <title>{TITLE_NOT_SET}</title>
+  <link rel="stylesheet" href="../src/styles/style">
+  <title>Form Validation</title>
 </head>
 <body>
-  <div id="root"></div>
+  <div class="login">
+    <dl class="form">
+      <dd>
+        <label>Username</label>
+        <input id="username" class="login-input" type="text" placeholder="Pick a username">
+      </dd>
+      <dd>
+        <label>Email</label>
+        <input id="email" class="login-input" type="text" placeholder="youremail@example.com">
+      </dd>
+      <dd>
+        <label>Phone Number</label>
+        <input id="phone"class="login-input" type="text" placeholder="0912345678">
+      </dd>
+      <dd>
+        <label>Birth</label>
+        <input id="birth"class="login-input" type="date" placeholder="yyyy-mm-dd">
+      </dd>
+    </dl>
+    <p>Use at least eight characters.</p>
+    <button type="submit">Sign up</button>
+  </div>
 </body>
 </html>
